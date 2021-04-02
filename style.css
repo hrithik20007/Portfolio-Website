@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	margin: 1em;
+	margin: 0;
 	padding: 0;
 }
 
@@ -13,14 +13,16 @@ body{
 .grid1{
 	display:grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 5px;
+	grid-gap: 10px;
 	grid-auto-rows: minmax(80px,auto);
+	padding-bottom: 3em;
 }
 
 .grid1>div{
 	background: #fff;
-	color: #333;
-	/*background:url('./images/image2');*/
+	/*color: #333;*/
+	color: #fff;
+	background:url('./images/image1.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -74,18 +76,18 @@ body{
 }
 
 .bg1{
-	background:url('./images/image1.jpg');
+	background:url("./images/image1.jpg");
 }
 
 .bg2{
-	background:url('./images/image2.jpg');
+	background:url("./images/image2.jpg");
 }
 
 
 .grid2{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-row-gap: 5px;
+	grid-column-gap: 1em;
 	grid-auto-rows: minmax(150px,auto);
 }
 
@@ -105,4 +107,112 @@ body{
 .grid2>div:hover{
 	transform: scale(1.1);
 	opacity: 0.7;
+}
+
+.landing{
+	background-image: url("./images/self.jpeg");
+	background-position: center bottom;
+	background-size: cover;
+	box-shadow: inset 0 600px 0 0 rgba(0,0,0,0.7);
+	min-height: 600px;
+}
+
+.landing>h1{
+	margin-left: 30px;
+	padding-top: 65px;
+	font-size: 50px;
+}
+
+.landing>ul{
+	list-style: none;
+	margin-left: 88px;
+	margin-top: 20px;
+}
+
+.landing>ul>li{
+	display: inline;
+	padding-left: 10px;
+	padding-right: 2px;
+}
+
+.para{
+	display:flex;
+	margin-left: 120px;
+	margin-top: 70px;
+	flex-direction: column;
+	width: 60%;
+	color: #fff;
+	text-align:center;
+	font-size: 30px;
+	width: 30%;
+	justify-content: space-between;
+}
+
+.interests>h2{
+	text-align: center;
+	margin: 30px;
+	color: #fff;
+	font-size: 45px;
+	padding-bottom: 1em;
+}
+
+.interests>h3{
+	text-align: center;
+	font-size: 35px; 
+	padding-bottom: 2em;
+}
+
+.interests>ul>li{
+	display:inline;
+	list-style: none;
+}
+
+.courses>h2{
+	text-align: center;
+}
+
+.projects>h2{
+	text-align: center;
+}
+
+.training>h2{
+	text-align: center;
+}
+
+.achievements>h2{
+	text-align: center;
+}
+
+.interests{
+	min-height: 600px;
+	padding:2em;
+	background-color: #333;
+}
+
+.courses{
+	min-height: 600px;
+}
+
+.projects{
+	min-height: 600px;
+}
+
+.training{
+	min-height: 600px;
+}
+
+.achievements{
+	min-height: 600px;
+}
+
+.pro1{
+	background-image: url("./images/levi.png");
+}
+
+.pro2{
+	background-image: url("./images/ddos.png");
+}
+
+.pro3{
+	background-image: url("./images/scanner.jpg");
 }
