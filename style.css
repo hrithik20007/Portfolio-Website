@@ -89,6 +89,7 @@ body{
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 1em;
 	grid-auto-rows: minmax(150px,auto);
+	padding: 2em;
 }
 
 .grid2>div{
@@ -150,37 +151,113 @@ body{
 
 .interests>h2{
 	text-align: center;
+	font-size: 45px;
 	margin: 30px;
 	color: #fff;
-	font-size: 45px;
 	padding-bottom: 1em;
 }
 
 .interests>h3{
 	text-align: center;
-	font-size: 35px; 
+	font-size: 30px; 
 	padding-bottom: 2em;
 }
 
 .interests>ul>li{
 	display:inline;
 	list-style: none;
+	padding: 15em;
 }
 
 .courses>h2{
 	text-align: center;
+	font-size: 45px;
+	margin: 30px;
+	color: #fff;
+	padding-bottom: 1em;
 }
 
 .projects>h2{
 	text-align: center;
+	font-size: 45px;
+	margin: 30px;
+	color: #fff;
+	padding-bottom: 1em;
 }
 
 .training>h2{
 	text-align: center;
+	font-size: 45px;
+	margin: 30px;
+	color: #fff;
+	padding-bottom: 1em;
 }
 
 .achievements>h2{
 	text-align: center;
+	font-size: 45px;
+	margin: 30px;
+	color: #fff;
+	padding-bottom: 1em;
+}
+
+.corflex{
+	display: flex;
+	flex-direction: row;
+	padding: 2em;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.cor1{
+	flex:1;
+	text-align: center;
+}
+
+.cor2{
+	flex:1;
+	text-align: center;
+}
+
+.cor3{
+	flex:1;
+	text-align: center;
+}
+
+.trainflex{
+	display: flex;
+	flex-direction: row;
+	padding: 2em;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.train1{
+	flex:1;
+	text-align: center;
+}
+
+.train2{
+	flex:1;
+	text-align: center;
+}
+
+.acflex{
+	display: flex;
+	flex-direction: row;
+	padding: 2em;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.ac1{
+	flex:1;
+	text-align: left;
+}
+
+.ac2{
+	flex:3;
+	text-align: left;
 }
 
 .interests{
@@ -193,8 +270,44 @@ body{
 	min-height: 600px;
 }
 
+.courses>p{
+	font-size: 20px;
+	padding: 2em;
+	text-align: center;
+}
+
+
 .projects{
 	min-height: 600px;
+}
+
+.projects>p{
+	font-size: 20px;
+	padding: 2em;
+	text-align: center;
+}
+
+.projects>button{
+	padding: 2em;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 3em;
+}
+
+#github{
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	padding-left: 2em; 
+}
+
+#github:hover{
+	transform: scale(1.1);
+	cursor: pointer;
 }
 
 .training{
@@ -205,8 +318,9 @@ body{
 	min-height: 600px;
 }
 
-.pro1{
-	background-image: url("./images/levi.png");
+.grid2>div{
+	background-image: url("./images/levi.jpg");
+	/*background-size: cover;*/
 }
 
 .pro2{
